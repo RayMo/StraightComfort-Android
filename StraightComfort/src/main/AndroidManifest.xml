@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".Views.SplashScreenActivity"
+            android:name="com.jrs.StraightComfort.Views.SplashScreenActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,12 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name=".Views.MainActivity"
+            android:name="com.jrs.StraightComfort.Views.MainActivity"
             android:label="@string/app_name" >
         </activity>
-
+        <activity
+            android:name="com.jrs.StraightComfort.Views.FullWorkstation01"
+            android:label="@string/title_activity_full_workstation01"
+            android:parentActivityName="com.jrs.StraightComfort.Views.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jrs.StraightComfort.Views.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

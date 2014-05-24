@@ -1,30 +1,17 @@
 package com.jrs.StraightComfort.Views;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-
 import com.jrs.StraightComfort.R;
 
+public class FullWorkstation01 extends Activity {
 
-public class MainActivity extends Activity {
-
-
-    /** Called when the user clicks the Send button */
-    public void PullScreen1(View view) {
-        Intent myIntent= new Intent(MainActivity.this, FullWorkstation01.class);
-        startActivity(myIntent);
-
-        // Do something in response to button
-    }
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_full_workstation01);
     }
 
 
@@ -32,7 +19,7 @@ public class MainActivity extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.full_workstation01, menu);
         return true;
     }
 
